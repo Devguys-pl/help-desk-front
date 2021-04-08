@@ -1,3 +1,5 @@
+`Alpha 0.0.1 - ready to start work.`
+
 # Getting Started with our project and node.js HTTP sever (via express.js)
 
 --INFORMATION ABOUT PROJECT--
