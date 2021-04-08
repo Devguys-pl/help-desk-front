@@ -1,0 +1,246 @@
+/* GLOWNE STYLE typu: "*" "html" "body" itp */
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.socialBox {
+  padding: 0 15% 0 0;
+}
+
+/*TOP Logo/Nazwa social media*/
+.top {
+  background-color: #1a1a1a;
+  height: 20vh;
+  width: 100vw;
+}
+
+.top > h1 {
+  display: flex;
+  padding-top: 40px;
+  margin-left: 200px;
+  font-size: 60px;
+  color: #f2f2f2;
+  font-weight: 400;
+}
+
+.i {
+  float: right;
+  color: #f2f2f2;
+}
+
+.i > i {
+  padding-top: 10px;
+  padding-right: 40px;
+  display: block;
+  float: right;
+  color: #f2f2f2;
+}
+
+/* NAWIGACJA ( logo, menu) */
+.nav {
+  display: flex;
+  padding-left: 20px;
+  height: 5vh;
+  width: 100vw;
+  background-color: #f2f2f2;
+}
+
+.nav > p {
+  margin-top: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+.label {
+  margin-left: 545px;
+  font-size: 18px;
+  display: block;
+  transition: all 0.5s;
+  transform: translateY(0rem);
+  color: #35CEFF;
+}
+
+.search {
+  margin-top: 2px;
+  margin-left: 500px;
+  color: #333;
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #35CEFF;
+  width: 20%;
+  text-align: center;
+}
+
+.search:placeholder-shown + .label {
+  opacity: 0;
+  visibility: hidden;
+  color: #35CEFF;
+}
+
+::placeholder {
+  color: #35CEFF;
+}
+
+.nav > p:hover {
+  border-bottom: 3px solid #35CEFF;
+  color: #35CEFF;
+  transition: 0.2s all;
+}
+
+
+
+
+
+/* HEADER ( slider, to co na szarym tle) */
+.header {
+  height: auto;
+  width: 100vw;
+  background-color: #A8B2B4;
+  padding: 15px;
+}
+
+h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 400;
+  color: #f2f2f2;
+}
+
+.header > p {
+  margin: 50px 300px 20px 300px;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 18px;
+}
+
+.readmore {
+  color: red;
+}
+
+
+
+/* CONTENT (listowanie wpisow) */
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2%;
+}
+
+.contentSingle {
+  padding: 15px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+}
+
+.wrapper {
+  /* width: 70vw; */
+  padding: 10px 10px;
+  /* margin: 15px 50px; */
+}
+
+.image {
+  height: 200px;
+  width: 200px; 
+  float: left;
+  background-color: #A8B2B4; 
+}
+
+.wrapper__child { 
+  display: flex;
+  padding: 0 0 0 10px;
+  font-size: 24px;
+}
+
+.commentCount {
+  display: flex;
+  padding: 0 0 0 10px;
+  font-size: 15px;
+}
+
+.comments {
+  margin:30px 0 30px 0;
+}
+
+.showComment {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.wrapper__child2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.latestpost {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.latestpost > h3 {
+  margin-top: 20px;
+  color: #35CEFF;
+  font-size: 22px;
+}
+
+.latestpost > h4 {
+  margin-top: 150px;
+  color: #35CEFF;
+  font-size: 22px;
+}
+
+.latestpost > p {
+  margin-top: 60px;
+  margin-right: 100px;
+  flex-wrap: wrap;
+  font-weight: 650;
+}
+
+
+
+
+
+/* ASIDE */
+
+
+
+/* FOOTER */
+
+
+/* addPost */
+
+.postCreator {
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.textArea {
+  min-height: 500px;
+}
+
+
+/* LOGIN */
+
+.show {
+  display: none;
+}
+
+// Class
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden !important;
+}

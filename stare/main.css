@@ -1,0 +1,10 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.top {
+    padding: 5px 10%;
+    background-color: #181616;
+    height: 200px;
+    color: #858484;
+}
