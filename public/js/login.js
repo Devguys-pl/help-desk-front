@@ -12,7 +12,8 @@ let logged = false;
 let info = document.getElementById('info');
 let content = document.getElementById('success')
 
-function getInfo() {
+function getInfo(e) {
+    // e.preventDefault();
     let username = document.getElementById('username').value
     let password = document.getElementById('password').value
     users.forEach(user => {
