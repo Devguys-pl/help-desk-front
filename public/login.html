@@ -17,10 +17,10 @@
 
 <body>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
-    <div class="container rounded-3" style="margin-top: 10vh; padding: 10px; background-color: #fff;">
+    <div class="container rounded-3">
         <div class="row">
             <div class="col-sm">
-                <div style="height: 60vh;" class="border border-danger"></div>
+                <div id="picture"></div>
             </div>
             <div class="col-sm">
                 <h2>Welcome back!</h2>
@@ -28,6 +28,7 @@
                     <!-- Email input -->
                     <div class="form-outline mb-4 rounded-pill">
                         <input type="text" id="username" class="form-control" />
+                        <!-- There is problem with that labels in console: "Cannot read property 'style' of null". Without labels there isn`t any problem -->
                         <label class="form-label" for="username">Login</label>
                     </div>
                     <!-- Password input -->
@@ -37,24 +38,26 @@
                     </div>
                     <!-- 2 column grid layout for inline styling -->
                     <div class="row mb-4">
-                        <div class="col d-flex justify-content-center">
+                        <div class="col d-flex justify-content-left">
                             <!-- Checkbox -->
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                                <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
                                 <label class="form-check-label" for="form1Example3"> Remember me </label>
                             </div>
                         </div>
                     </div>
                     <!-- Submit button -->
                     <div class="d-grid gap-2">
-                        <button onclick="getInfo()" type="submit" class="btn btn-primary btn-rounded butt">Sign in</button>
-                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                        <button onclick="getInfo()" type="submit" class="btn btn-primary btn-rounded butt-signin">Sign in</button>
+                        <hr>
+                        <div class="g-signin2" id="customBtn" data-onsuccess="onSignIn"> </div>
+                        <hr>
                     </div>
-                    <div class="col">
+                    <div class="col text-center">
                         <!-- Simple link -->
-                        <a href="#!">Forgot password?</a>
+                        <a href="#!" id="forgot-password">Forgot password?</a>
                     </div>
-                    <div class="col">
+                    <div class="col text-center">
                         <a href="#!">Create an Account!</a>
                     </div>
                 </form>
