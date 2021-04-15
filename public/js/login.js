@@ -22,20 +22,21 @@ function getInfo() {
     let password = document.getElementById('password').value
     for (let i = 0; i < users.length; i++) {
         if (username == users[i].username && password == users[i].password) {
-            info.textContent = (username + " is logged in")
+            info.textContent = (username + " is logged in");
             let logged = true;
 
-            if (logged = true) {
+            if (logged == true) {
                 content.textContent = ("Successful login, you can see this string now.")
             }
             return
         }
+        info.textContent = ("incorrect username or password")
     }
-    info.textContent = ("incorrect username or password")
+    
 
 
 
-//  i went back to the for loop because there were problems witch forEach
+//  i went back to the for loop because there were problems with forEach
 
 //     users.forEach(user => {
 //     if (username == user.username && password == user.password) {

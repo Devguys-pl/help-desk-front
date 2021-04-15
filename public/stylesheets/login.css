@@ -66,16 +66,45 @@ form {
 }
 
 /*google button*/
+
 div.abcRioButton {
+	height: 45px !important;
+	width: 100% !important;
 	-webkit-border-radius: 50px;
 	box-shadow: 0 1px 1px 0 rgb(0 0 0 / 25%);
 }
 
 .abcRioButtonContentWrapper {
-    border-radius: 50px;
-    background-color: #486EDB;
+    background-color: #ff3333;
     color: #fff;
+    text-align: center;
+    transition: 0.5s;
 }
+
+.abcRioButtonContentWrapper:hover {
+	background-color: #e60000;
+}
+
+.abcRioButtonContents {
+	visibility: hidden !important;
+	font-size: 1px !important;
+}
+
+.abcRioButtonContents:after {
+	content: 'SIGN IN' !important;
+	visibility: visible !important;
+	font-size: 12px !important;
+	line-height: 47px !important;
+	font-weight: 400 !important;
+	margin-right: 40px;
+}
+
+svg {
+	margin-top: 2px !important;
+	height: 25px !important;
+	width: 25px !important;
+}
+
 
 
 
