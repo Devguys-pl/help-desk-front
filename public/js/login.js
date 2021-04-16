@@ -9,6 +9,10 @@ let users = [{
     {
         username: "Antoni",
         password: "antoni"
+    },
+    {
+        username: "FUQDATSHT",
+        password: "ASKTOREMOVETHAT"
     }
 ]
 let logged = false;
