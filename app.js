@@ -32,7 +32,13 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.json;
 });
+
+app.get('/hello/:name', function (req, res) {
+  res.send('Hello World!' + req.params.name)
+})
+
+
 
 module.exports = app;
