@@ -3,18 +3,15 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-
-var port = 3000;
+let port = 3000;
 
 app.listen(port, function() {
     console.log('app started');
   });
-
 
 app.use(logger('dev'));
 app.use(express.json());
