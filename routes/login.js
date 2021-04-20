@@ -1,6 +1,11 @@
-function loginRoutes {
-    app.put('/user', function (req, res) {
-        res.send('Got a PUT request at /user')
+function loginRoutes (app) {
+  let isLogged = false;
+    app.get('/login', function (req, res) {
+        if (isLogged === false) {
+          res.send('Przykro mi ale nie jestes zalogowany');
+        } else {
+          res.send('ok, masz dostep dalej');
+        }
       })
 };
 
