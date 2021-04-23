@@ -1,3 +1,4 @@
+let cookieSession = require('cookie-session')
 let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
@@ -18,9 +19,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+app.use(cookieSession({
+  name: 'session',
+  keys: ['YOURKEYS'],
+  maxAge: 24 * 60 * 60 * 1000
+}))
 
 loginRoutes(app);
 
