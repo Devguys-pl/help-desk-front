@@ -1,18 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-function loginRoutes (app) {
+router.get('/login', (req, res, next) => {
+    res.send('dupa');
+})
 
-  let isLogged = false;
-    app.get('/login', function (req, res,) {
-        if (isLogged === false) {
-          res.send('Przykro mi ale nie jestes zalogowany');
-        } else {
-          res.send('ok, masz dostep dalej');
-        }
-      })
-};
-
-
-
-module.exports = loginRoutes;
+module.exports = router;
