@@ -11,11 +11,12 @@ let app = express();
 let port = 3000;
 
 app.listen(port, function() {
-    console.log('app started');
-  });
+  console.log('app started');
+});
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');  
+// view engine setup
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -27,9 +28,10 @@ app.use('/login', loginRoute);
 
 app.use(cookieSession({
   name: 'session',
-  keys: ['YOURKEYS'],
+  keys: ['dsawei*&DSA CZXJBSAUDHAS*D AS*YUDW*E&WQ*&SZUJ SAJHDAS&UY3u2y1 321gdsa6 1832 7218 7dsagbdsyaug23713y2 123 g21'],
   maxAge: 24 * 60 * 60 * 1000
 }))
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -46,8 +48,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-
-
 
 module.exports = app;
