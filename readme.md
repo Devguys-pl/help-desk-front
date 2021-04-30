@@ -13,7 +13,12 @@ In the project directory, you must use this cmd:
 
 After that you can start app:
 
-### `npm start`
+### `npm start` 
+
+OR use it:
+
+### `nodemon app.js`  <--- it's better
+
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
