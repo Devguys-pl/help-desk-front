@@ -7,6 +7,14 @@ let users = [{
         password: "dawid"
     },
     {
+        username: "Antoni",
+        password: "antoni"
+    },
+    {
+        username: "FUQDATSHT",
+        password: "ASKTOREMOVETHAT"
+    },
+    {
         username: "jaro",
         password: "jaro"
     }
