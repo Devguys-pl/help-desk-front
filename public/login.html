@@ -24,16 +24,18 @@
             </div>
             <div class="col-sm">
                 <h2>Welcome back!</h2>
-                <form>
+
+
+                <form action="/login" method="post">
                     <!-- Email input -->
                     <div class="form-outline mb-4 rounded-pill">
-                        <input type="text" id="username" class="form-control" />
+                        <input type="text" id="username" name="username" class="form-control" />
                         <!-- There is problem with that labels in console: "Cannot read property 'style' of null". Without labels there isn`t any problem -->
                         <label class="form-label" for="username">Login</label>
                     </div>
                     <!-- Password input -->
                     <div class="form-outline mb-4 rounded-pill">
-                        <input type="password" id="password" class="form-control form-control-lg" />
+                        <input type="password" id="password" name="password" class="form-control form-control-lg" />
                         <label class="form-label" for="password">Password</label>
                     </div>
                     <!-- 2 column grid layout for inline styling -->
@@ -48,19 +50,22 @@
                     </div>
                     <!-- Submit button -->
                     <div class="d-grid gap-2">
-                        <button onclick="getInfo()" type="button" class="btn btn-primary btn-rounded butt-signin">Sign in</button>
-                        <hr>
-                        <div class="g-signin2" id="customBtn" data-onsuccess="onSignIn"> </div>
-                        <hr>
-                    </div>
-                    <div class="col text-center">
-                        <!-- Simple link -->
-                        <a href="#!" id="forgot-password">Forgot password?</a>
-                    </div>
-                    <div class="col text-center">
-                        <a href="#!">Create an Account!</a>
+                        <button type="submit" value="login" class="btn btn-primary btn-rounded butt-signin">Sign in</button>
                     </div>
                 </form>
+                <hr>
+                    <div class="g-signin2" id="customBtn" data-onsuccess="onSignIn"> </div>
+                <hr>
+
+                <div class="col text-center">
+                    <!-- Simple link -->
+                    <a href="#!" id="forgot-password">Forgot password?</a>
+                </div>
+                <div class="col text-center">
+                    <a href="#!">Create an Account!</a>
+                </div>
+
+
                 <!-- not needed yet -->
                 <!-- <a href="#" onclick="signOut();">Sign out</a> -->
             </div>

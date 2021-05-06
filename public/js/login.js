@@ -13,6 +13,11 @@ let users = [{
 ]
 let logged = false;
 
+// z pliku login.html form z metodą POST, który zawierał by wpisane dane uzytkownika.
+// po stronie backendu odbieram te dane i weryfikuje je czy jes tok
+// jesli jest ok to tworze ciastko i ewentualnie wysylam res.json z informacja, ze succes
+// odbieram informacje i przechodze do innej sekcji.
+
 let info = document.getElementById('info');
 let content = document.getElementById('success')
 
