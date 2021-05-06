@@ -12,7 +12,7 @@ body {
 }
 
 #picture {
-	min-height: 60vh;
+	min-height: 470px;
 	background-image: url("https://dz2cdn1.dzone.com/storage/temp/12334613-971.jpg");
 	background-position: center;
     background-size: cover;
