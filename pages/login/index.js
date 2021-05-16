@@ -1,38 +1,42 @@
-import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react';
-import styles from '/styles/Home.module.css'
-import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import { Button, Container, Card, Row, Col, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+
 
 
 export default function Login(props) {
   return (
       <>
-            <MDBContainer>
-                <div className={styles.container}>
-                    <MDBRow>
-                        <MDBCol size='md' className='col-example'>
-                            <img
-                            src='https://dz2cdn1.dzone.com/storage/temp/12334613-971.jpg'
-                            className='picture'
-                            alt='...'
-                            style={{ maxWidth: '67vh' }}
-                            />
-                        </MDBCol>
-                        <MDBCol size='md' className='col-example'>
-                                LOGOWANKO
-                        </MDBCol>
-                    </MDBRow>
-                    Go to {' '}
-                    <Link href="/">
-                        <a className='text-danger'> Main page</a>
-                    </Link>
-                </div>
-            </MDBContainer>
+        <Container className="themed-container" fluid="md">
+            <div className="loginDiv">
+                <Row>
+                    <Col className="loginContainer" sm="12" md={{ size: 6, offset: 1 }}>
+                        <div className="loginImg">
+                            
+                        </div>
+                        <div className="loginForm">
+                            <Form>
+                                <FormGroup>
+                                    <Label for="exampleEmail">Hello</Label>
+                                </FormGroup>
+                                <FormGroup className="loginSpace">
+                                    <Label for="exampleEmail">Email</Label>
+                                    <Input type="email" name="email" id="exampleEmail" placeholder="Your e-mail" />
+                                </FormGroup>
+                                <FormGroup className="loginSpace">
+                                    <Label for="examplePassword">Password</Label>
+                                    <Input type="password" name="password" id="examplePassword" placeholder="Your password" />
+                                </FormGroup>
+                                <Button className="loginBtn">Submit</Button>
+                            </Form>
+                        </div>
+                    </Col>
+                </Row>
+            </div>   
+        </Container>
+      
       </>
   )
 }
