@@ -18,8 +18,15 @@ export default function Navbar() {
               <a>Home</a>
             </Link>
           </li>
+          <li>
+          </li>
           {user ? (
             <>
+              <li>
+                <Link href="/users">
+                  <a>Check all users</a>
+                </Link>
+              </li>
               <li>
                 <Link href="/profile">
                   <a>Profile</a>
