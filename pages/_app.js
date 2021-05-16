@@ -1,14 +1,15 @@
-import React from 'react';
-import { UserProvider } from '@auth0/nextjs-auth0';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '/styles/globals.css';
+import Navbar from '../components/Navbar'
+import '../styles.css'
 
-function MyApp({ Component, pageProps }) {
-  return  (
-    <UserProvider>
-        <Component {...pageProps} />
-    </UserProvider> 
-  );
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Navbar />
+      <main>
+        <div className="container">
+          <Component {...pageProps} />
+        </div>
+      </main>
+    </>
+  )
 }
-
-export default MyApp
